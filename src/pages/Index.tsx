@@ -8,7 +8,8 @@ import {
   Clock, 
   Wallet,
   PlusCircle,
-  ArrowRight
+  ArrowRight,
+  Receipt
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
