@@ -10,6 +10,7 @@ import {
   FileText,
   ExternalLink
 } from 'lucide-react';
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
