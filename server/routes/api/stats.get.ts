@@ -9,10 +9,10 @@ export default defineHandler(async () => {
     const totalRevenue = await sql`SELECT SUM(amount) FROM bills WHERE status = 'Paid'`;
 
     return {
-      totalCustomers: totalCustomers[0].count,
-      paidBills: paidBills[0].count,
-      unpaidBills: unpaidBills[0].count,
-      totalRevenue: totalRevenue[0].sum || 0
+      totalCustomers: Number(totalCustomers[0].count) || 0,
+      paidBills: Number(paidBills[0].count) || 0,
+      unpaidBills: Number(unpaidBills[0].count) || 0,
+      totalRevenue: Number(totalRevenue[0].sum) || 0
     };
   } catch (error) {
     console.error("Database error:", error);
